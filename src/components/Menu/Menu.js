@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types'
 import {withRouter} from 'react-router-dom';
 import { connect } from 'react-redux';
 import { Header, Icon, Menu, Segment, Sidebar, Button } from 'semantic-ui-react'
@@ -8,11 +9,10 @@ import './Menu.css'
 
 class MenuItem extends Component {
 
-  state = {
-    hidden: false,
-    animation: 'overlay',
-
-}
+//   state = {
+//     animation: PropTypes.string,
+//     hidden: false,
+//   }
 
   render () {
     return (
@@ -20,12 +20,11 @@ class MenuItem extends Component {
             <div className="sidebar">
         <Sidebar
             as={Menu}
-            animation='overlay'
+            animation='push'
             icon='labeled'
             inverted
-            onHide={() => this.setState({hidden: false})}
             vertical
-            visible={this.state.hidden}
+            visible
             width='thin' 
         >
             <Link to="/home">
@@ -57,20 +56,15 @@ class MenuItem extends Component {
                         Drinks
                 </Menu.Item>
             </Link>
+
+            <Link  to="/info">
+                <Menu.Item as='b'>
+                        Info
+                </Menu.Item>
+            </Link>
+
         </Sidebar>
             </div>
-                <div className='fp-panel-main'>
-                    <Sidebar.Pusher dimmed={this.state.hidden}>
-                        <Segment basic textAlign="left">
-                            <Link to="/home">
-                            </Link>
-                        <Button onClick={()=>{this.setState({hidden: true})}}>
-                            <Icon name="sidebar" color='blue'/>
-                            Menu
-                        </Button>
-                        </Segment>
-                    </Sidebar.Pusher>
-                </div>
             </div>
     );
   }

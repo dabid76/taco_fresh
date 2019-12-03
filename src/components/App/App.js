@@ -9,23 +9,23 @@ import {
 } from 'react-router-dom';
 
 import {connect} from 'react-redux';
-import InfoPage from '../InfoPage/InfoPage';
 
+import InfoPage from '../InfoPage/InfoPage';
 // import Nav from '../Nav/Nav';
 import Footer from '../Footer/Footer';
 import AboutPage from '../AboutPage/AboutPage';
-// import Contact from '../Contact/Contact';
+import Contact from '../Contact/Contact';
 // import Photo from '../Photo/Photo';
 import Home from '../Home/Home';
 // import Drinks from '../Drinks/Drinks';
 import './App.css';
 import Menu from '../Menu/Menu';
-import styled from 'styled-components';
+// import styled from 'styled-components';
 
-const Head = styled.div`
-  position: flex;
-  z-index: 150;
-`
+// const Head = styled.div`
+//   position: flex;
+//   z-index: 150;
+// `
 
 class App extends Component {
 
@@ -34,9 +34,9 @@ class App extends Component {
       
       <Router>
         <div>
-        <Head>
+        {/* <Head> */}
         <Menu/>
-        </Head>
+        {/* </Head> */}
           <Switch>
             {/* Visiting localhost:3000 will redirect to localhost:3000/home */}
             <Redirect exact from="/" to="/home" />
@@ -55,11 +55,11 @@ class App extends Component {
               component={AboutPage}
             />
 
-            {/* <Route
+            <Route
               exact
               path="/contact"
               component={Contact}
-            /> */}
+            />
 
             {/* <Route
               exact
