@@ -20,6 +20,8 @@ import Home from '../Home/Home';
 // import Drinks from '../Drinks/Drinks';
 import './App.css';
 import Menu from '../Menu/Menu';
+import Tacos from '../Tacos/Tacos';
+
 // import styled from 'styled-components';
 
 // const Head = styled.div`
@@ -59,6 +61,12 @@ class App extends Component {
               exact
               path="/contact"
               component={Contact}
+            />
+
+            <Route
+              exact
+              path="/tacos"
+              component={Tacos}
             />
 
             {/* <Route
