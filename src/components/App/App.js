@@ -21,6 +21,8 @@ import Home from '../Home/Home';
 import './App.css';
 import Menu from '../Menu/Menu';
 import Tacos from '../Tacos/Tacos';
+import Nav from '../Nav/Nav';
+
 
 // import styled from 'styled-components';
 
@@ -36,6 +38,8 @@ class App extends Component {
       
       <Router>
         <div>
+        <Nav />
+
         {/* <Head> */}
         <Menu/>
         {/* </Head> */}
