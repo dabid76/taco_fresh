@@ -25,6 +25,9 @@ class Home extends Component {
     render() {
     return (
         <div className="home">
+            <p>
+                Description of what the restaurant is.
+            </p>
         <div className="grid-container">
         <main className="flexbox">
             <p><div className="grid-item" onClick={(event) => this.menu('Tacos', event)}>Tacos</div></p>
@@ -35,9 +38,9 @@ class Home extends Component {
       </div>
       </div>
         // <div className="home">
-        //     <p>
-        //         Description of what the restaurant is.
-        //     </p>
+            // <p>
+            //     Description of what the restaurant is.
+            // </p>
         //     <div className="grid-container">
         //         <div className="grid-item" onClick={(event) => this.menu('Tacos', event)}>Tacos</div>
         //         <div className="grid-item" onClick={(event) => this.menu('Rolls', event)}>Rolls</div>

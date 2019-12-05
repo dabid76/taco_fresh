@@ -1,4 +1,9 @@
 footer {
-    margin-top: 50%;
+    /* margin-top: 70%; */
     margin-left: 15%;
+    /* position: sticky; */
+    position: absolute;
+    bottom: 5px;
+    height: 20px;
+    /* width: 100%; */
 }
