@@ -69,3 +69,12 @@ p:last-child {
 .description {
     font-size: 12px;
 }
+
+.picTacos {
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 25px;
+    float: right;
+    margin-right: 16%;
+    width: 42.5%;
+}
