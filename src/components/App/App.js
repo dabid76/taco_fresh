@@ -21,6 +21,8 @@ import Home from '../Home/Home';
 import './App.css';
 import Menu from '../Menu/Menu';
 import Tacos from '../Tacos/Tacos';
+import Rolls from '../Rolls/Rolls';
+import Appetizers from '../Appetizers/Appetizers';
 import Nav from '../Nav/Nav';
 
 
@@ -71,6 +73,18 @@ class App extends Component {
               exact
               path="/tacos"
               component={Tacos}
+            />
+
+            <Route
+              exact
+              path="/rolls"
+              component={Rolls}
+            />
+
+            <Route
+              exact
+              path="/appetizers"
+              component={Appetizers}
             />
 
             {/* <Route

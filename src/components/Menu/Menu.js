@@ -9,10 +9,10 @@ import './Menu.css'
 
 class MenuItem extends Component {
 
-//   state = {
-//     animation: PropTypes.string,
-//     hidden: false,
-//   }
+  state = {
+    animation: 'overlay',
+    hidden: false,
+  }
 
   render () {
     return (
@@ -25,47 +25,47 @@ class MenuItem extends Component {
             inverted
             vertical
             visible
-            width='thin' 
+            width='0px' 
         >
             <Link to="/home">
-                <Menu.Item as='b'>
+                <Menu.Item as='a'>
                 Logo
                 </Menu.Item>
             </Link>
 
             <Link  to="/about">
-                <Menu.Item as='b'>
+                <Menu.Item as='a'>
                         About us
                 </Menu.Item>
             </Link>
 
             <Link  to="/contact">
-                <Menu.Item as='b'>
+                <Menu.Item as='a'>
                         Contact
                 </Menu.Item>
             </Link>
 
             <Link  to="/photo">
-                <Menu.Item as='b'>
+                <Menu.Item as='a'>
                         Photo Gallary
                 </Menu.Item>
             </Link>
 
             <Link  to="/drinks">
-                <Menu.Item as='b'>
+                <Menu.Item as='a'>
                         Drinks
                 </Menu.Item>
             </Link>
 
             <Link  to="/info">
-                <Menu.Item as='b'>
+                <Menu.Item as='a'>
                         Info
                 </Menu.Item>
             </Link>
 
         </Sidebar>
-            </div>
-            </div>
+        </div>
+        </div>
     );
   }
 }

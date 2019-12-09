@@ -14,14 +14,10 @@
 .nav-link {
   float: left;
   color: #fc0909;
-  /* background-color: #00acb0; */
   text-align: center;
   padding: 24px 10px;
   text-decoration: none;
   font-size: 15px;
-
-  /* these last two make the logout button in
-  the nav bar look like another link */
   border:none;
   cursor: pointer;
   outline:0;
@@ -33,9 +29,8 @@
 
 .nav-right {
   float: right;
-  /* position: relative; */
   display: inline;
-  margin-right: 30%;
+  margin-right: 40%;
   padding: 0 0 4px 0;
   border-bottom-width:1px;
   text-transform: uppercase;
