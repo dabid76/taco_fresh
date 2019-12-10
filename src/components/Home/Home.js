@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import {connect} from 'react-redux';
 import { Header, Icon } from 'semantic-ui-react'
 import './Home.css'
-
+import A1 from '../images/A1.jpg'
 
 class Home extends Component {
     menu = (propertyName) =>{
@@ -30,7 +30,7 @@ class Home extends Component {
             </p>
         {/* <div className="grid-container"> */}
         <main className="flexbox">
-            <p className="grid-item" onClick={(event) => this.menu('Tacos', event)}><img src="../images/A1.jpg" />Tacos</p>
+            <p className="grid-item" onClick={(event) => this.menu('Tacos', event)}><img src={A1} height='100vh' width='90%' />Tacos Menu</p>
             <p className="grid-item" onClick={(event) => this.menu('Rolls', event)}>Rolls</p>
             <p className="grid-item" onClick={(event) => this.menu('Appetizers', event)}>Appetizers</p>
             <p className="grid-item" onClick={(event) => this.menu('Drinks', event)}>Drinks</p>

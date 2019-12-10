@@ -2,6 +2,8 @@ import React, {Component} from 'react';
 import {connect} from 'react-redux';
 import {Header, Icon} from 'semantic-ui-react'
 import './Tacos.css'
+import A1 from '../images/A1.jpg'
+
 
 class Tacos extends Component {
 
@@ -10,7 +12,7 @@ class Tacos extends Component {
             <div className="tacos">
                 <div  className="picTacos">
                     <h2>
-                        Taco Picture
+                    <img src={A1} height='50%' width='50%' />
                     </h2>
                 </div>
                 <ul className="leaders">
@@ -66,7 +68,7 @@ class Tacos extends Component {
 
                     <div  className="picTacos">
                         <h2>
-                            Another Taco Picture
+                        <img src={A1} height='50%' width='50%' />
                         </h2>
                     </div>
 
@@ -120,7 +122,7 @@ class Tacos extends Component {
 
                     <div  className="picTacos">
                         <h2>
-                            Another Taco Picture
+                        <img src={A1} height='50%' width='50%' />
                         </h2>
                     </div>
 
