@@ -14,7 +14,7 @@ class Home extends Component {
             this.props.history.push('/rolls')
             this.setState({ open: false });
         } else if (propertyName === 'Drinks') {
-            // this.props.history.push('/preregister')
+            // this.props.history.push('/drinks')
             this.setState({ open: false });
         } else if (propertyName === 'Appetizers') {
         this.props.history.push('/appetizers')
@@ -30,7 +30,7 @@ class Home extends Component {
             </p>
         {/* <div className="grid-container"> */}
         <main className="flexbox">
-            <p className="grid-item" onClick={(event) => this.menu('Tacos', event)}>Tacos</p>
+            <p className="grid-item" onClick={(event) => this.menu('Tacos', event)}><img src="../images/A1.jpg" />Tacos</p>
             <p className="grid-item" onClick={(event) => this.menu('Rolls', event)}>Rolls</p>
             <p className="grid-item" onClick={(event) => this.menu('Appetizers', event)}>Appetizers</p>
             <p className="grid-item" onClick={(event) => this.menu('Drinks', event)}>Drinks</p>

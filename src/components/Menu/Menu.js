@@ -5,14 +5,14 @@ import { connect } from 'react-redux';
 import { Header, Icon, Menu, Segment, Sidebar, Button } from 'semantic-ui-react'
 import { Link } from 'react-router-dom';
 import './Menu.css'
-
+// import './tacos.jpg'
 
 class MenuItem extends Component {
 
-  state = {
-    animation: 'overlay',
-    hidden: false,
-  }
+//   state = {
+//     animation: 'overlay',
+//     hidden: false,
+//   }
 
   render () {
     return (
@@ -29,6 +29,7 @@ class MenuItem extends Component {
         >
             <Link to="/home">
                 <Menu.Item as='a'>
+                    <img src="images/logo.jpg" />
                 Logo
                 </Menu.Item>
             </Link>
