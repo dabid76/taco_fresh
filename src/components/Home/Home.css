@@ -23,6 +23,7 @@
   margin-top: 8px;
   vertical-align: middle;
   max-width: 80%;
+  
 }
   
   .grid-item {
@@ -54,6 +55,8 @@
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: 40vh 30vh 30vh;
     grid-gap: 10px; */
+
+    font-family: 'Courgette', cursive;
 
     display: -ms-flexbox; 
     display: flex;

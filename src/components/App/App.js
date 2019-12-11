@@ -11,11 +11,10 @@ import {
 import {connect} from 'react-redux';
 
 import InfoPage from '../InfoPage/InfoPage';
-// import Nav from '../Nav/Nav';
 import Footer from '../Footer/Footer';
 import AboutPage from '../AboutPage/AboutPage';
 import Contact from '../Contact/Contact';
-// import Photo from '../Photo/Photo';
+import Photo from '../Photo/Photo';
 import Home from '../Home/Home';
 // import Drinks from '../Drinks/Drinks';
 import './App.css';
@@ -87,11 +86,11 @@ class App extends Component {
               component={Appetizers}
             />
 
-            {/* <Route
+            <Route
               exact
               path="/photo"
               component={Photo} 
-            /> */}
+            />
 
             {/* <Route
               exact

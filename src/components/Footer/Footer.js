@@ -8,7 +8,7 @@ import './Footer.css'
 
 const Footer = () => (
   <footer>
-    &copy; Taco Fresh
+    {/* &copy; Taco Fresh */}
   </footer>
 );
 

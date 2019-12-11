@@ -48,37 +48,7 @@ class MenuItem extends Component {
                 </Menu.Item>
             </Link>
 
-            <Link  to="/about">
-                <Menu.Item as='a'>
-                        About us
-                </Menu.Item>
-            </Link>
-
-            <Link  to="/contact">
-                <Menu.Item as='a'>
-                        Contact
-                </Menu.Item>
-            </Link>
-
-            <Link  to="/photo">
-                <Menu.Item as='a'>
-                        Photo Gallary
-                </Menu.Item>
-            </Link>
-
-            <Link  to="/drinks">
-                <Menu.Item as='a'>
-                        Drinks
-                </Menu.Item>
-            </Link>
-
-            <Link  to="/info">
-                <Menu.Item as='a'>
-                        Info
-                </Menu.Item>
-            </Link>
-
-             <ExpansionPanel expanded={this.state.expanded} onChange={this.handleExpand}>
+            <ExpansionPanel expanded={this.state.expanded} onChange={this.handleExpand}>
                     <ExpansionPanelSummary
                         expandIcon={<ExpandMoreIcon />}
                         aria-controls="panel1a-content"
@@ -114,6 +84,36 @@ class MenuItem extends Component {
                             </ExpansionPanelDetails>
                         </ExpansionPanel>
 
+            {/* <Link  to="/about">
+                <Menu.Item as='a'>
+                        About us
+                </Menu.Item>
+            </Link> */}
+
+            <Link  to="/photo">
+                <Menu.Item as='a'>
+                        Photo Gallary
+                </Menu.Item>
+            </Link>
+
+            {/* <Link  to="/drinks">
+                <Menu.Item as='a'>
+                        Drinks
+                </Menu.Item>
+            </Link> */}
+
+            <Link  to="/info">
+                <Menu.Item as='a'>
+                        Info
+                </Menu.Item>
+            </Link>
+
+            <Link  to="/contact">
+                <Menu.Item as='a'>
+                        Contact
+                </Menu.Item>
+            </Link>
+            
         </Sidebar>
         </div>
         </div>
