@@ -10,7 +10,7 @@ const Nav = (props) => (
     </Link>
     <div className="nav-right">
       {/* Always show this link since the about page is not protected */}
-      <Link className="nav-link" to="/tacos">
+      {/* <Link className="nav-link" to="/tacos">
         Tacos
       </Link>
       <Link className="nav-link" to="/rolls">
@@ -21,7 +21,7 @@ const Nav = (props) => (
       </Link>
       <Link className="nav-link" to="/drinks">
         Drinks
-      </Link>
+      </Link> */}
     </div>
   </div>
 );
