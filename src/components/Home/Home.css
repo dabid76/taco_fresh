@@ -27,19 +27,19 @@
 }
   
   .grid-item {
-    max-width: 100%;
+    /* max-width: 100%; */
 
     border: 1px solid rgba(0, 0, 0, 0.8);
     font-size: 265%;
     text-align: center;
     justify-content: space-between;
-    height: 80vh;
+    /* height: 80vh; */
     padding: 60px;
     margin-left: 43px;
 
     margin: 0 auto;
     padding: 15px;
-    grid-template-rows: auto 1fr auto;
+    /* grid-template-rows: auto 1fr auto; */
     height: 80vh;
     width: 20vw;
 

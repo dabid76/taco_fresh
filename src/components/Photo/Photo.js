@@ -4,6 +4,9 @@ import { Header, Icon } from 'semantic-ui-react'
 
 import Tacos from './TacosPhoto'
 import Rolls from './RollsPhoto'
+// import Appetizers from './AppetizersPhoto'
+// import Drinks from './DrinksPhoto'
+// import Restaurant from './RestaurantPhoto'
 
 
 class Photo extends Component {

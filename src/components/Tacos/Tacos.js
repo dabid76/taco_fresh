@@ -11,9 +11,10 @@ class Tacos extends Component {
         return (
             <div className="tacos">
                 <div  className="picTacos">
-                    {/* <h2> */}
-                        <img src={A1} alt='one'/>
-                    {/* </h2> */}
+                    <h2>
+                        Tacos Menu
+                        {/* <img src={A1} alt='one'/> */}
+                    </h2>
                 </div>
                 <ul className="leaders">
                     <div className="T1">
@@ -68,7 +69,7 @@ class Tacos extends Component {
 
                     <div  className="picTacos">
                         <h2>
-                        <img src={A1} height='50%' width='50%' />
+                        {/* <img src={A1} height='50%' width='50%' /> */}
                         </h2>
                     </div>
 
@@ -122,7 +123,7 @@ class Tacos extends Component {
 
                     <div  className="picTacos">
                         <h2>
-                        <img src={A1} height='50%' width='50%' />
+                        {/* <img src={A1} height='50%' width='50%' /> */}
                         </h2>
                     </div>
 

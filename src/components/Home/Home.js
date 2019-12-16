@@ -45,22 +45,28 @@ class Home extends Component {
         <main className="flexbox">
             <div className="grid-item" onClick={(event) => this.menu('Tacos', event)}>
                 <img src={A0} width="90%" height="100vh" />
-                <img src={A1} width="90%" height="100vh" />
+                {/* <img src={A1} width="90%" height="100vh" />
                 <img src={A2} width="90%" height="100vh" />
                 <img src={A3} width="90%" height="100vh" />
-                <img src={A4} width="90%" height="100vh" />
+                <img src={A4} width="90%" height="100vh" /> */}
                 Tacos
             </div>
             <div className="grid-item" onClick={(event) => this.menu('Rolls', event)}>
                 <img src={T1} width="90%" height="100vh" />
-                <img src={T2} width="90%" height="100vh" />
+                {/* <img src={T2} width="90%" height="100vh" />
                 <img src={T3} width="90%" height="100vh" />
                 <img src={T4} width="90%" height="100vh" />
-                <img src={T5} width="90%" height="100vh" />
+                <img src={T5} width="90%" height="100vh" /> */}
                 Rolls
             </div>
-            <p className="grid-item" onClick={(event) => this.menu('Appetizers', event)}>Appetizers</p>
-            <p className="grid-item" onClick={(event) => this.menu('Drinks', event)}>Drinks</p>
+            <div className="grid-item" onClick={(event) => this.menu('Appetizers', event)}>
+                <img src={T1} width="90%" height="100vh" />
+                Appetizers/Drinks
+            </div>
+            {/* <div className="grid-item" onClick={(event) => this.menu('Drinks', event)}>
+                <img src={T1} width="90%" height="100vh" />
+                Drinks
+            </div> */}
         </main>
         </div>
         // </div>

@@ -10,7 +10,7 @@ class Rolls extends Component {
             <div className="tacos">
                 <div  className="picTacos">
                     <h2>
-                        Roll Picture
+                        Rolls Menu
                     </h2>
                 </div>
                 <ul className="leaders">
@@ -62,12 +62,6 @@ class Rolls extends Component {
                         </span>
                     </div>
 
-                    <div  className="picTacos">
-                        <h2>
-                            Another Roll Picture
-                        </h2>
-                    </div>
-
                     <div className="T1">
                         <li>
                             <span>S5. Spicy Yellowtail Roll</span>
@@ -114,12 +108,6 @@ class Rolls extends Component {
                             Tempura Shrimp, Avocado, Cucumber, Top With Salmon, Avocado, Eel & Spicy Sauce
                         </p>
                         </span>
-                    </div>
-
-                    <div  className="picTacos">
-                        <h2>
-                            Another Roll Picture
-                        </h2>
                     </div>
 
                     <div className="T1">

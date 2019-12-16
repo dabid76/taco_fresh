@@ -9,7 +9,10 @@ class Appetizers extends Component {
             <div className="tacos">
                 <div  className="picTacos">
                     <h2>
-                        Picture
+                        Appetizers & Drinks
+                        <h2>
+                            Menu
+                        </h2>
                     </h2>
                 </div>
                 <ul className="leaders">
