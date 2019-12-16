@@ -47,7 +47,7 @@ class MenuItem extends Component {
                     <img src={logo} height='50px' width='50px' position='fixed' />
                 </Menu.Item>
             </Link>
-
+{/* 
             <ExpansionPanel expanded={this.state.expanded} onChange={this.handleExpand}>
                     <ExpansionPanelSummary
                         expandIcon={<ExpandMoreIcon />}
@@ -82,13 +82,19 @@ class MenuItem extends Component {
                             </TableBody>
                             </Table>
                             </ExpansionPanelDetails>
-                        </ExpansionPanel>
+                        </ExpansionPanel> */}
 
-            {/* <Link  to="/about">
+            <Link  to="/menu">
                 <Menu.Item as='a'>
-                        About us
+                        Menu
                 </Menu.Item>
-            </Link> */}
+            </Link>
+
+            <Link  to="/about">
+                <Menu.Item as='a'>
+                        About
+                </Menu.Item>
+            </Link>
 
             <Link  to="/photo">
                 <Menu.Item as='a'>
@@ -96,24 +102,24 @@ class MenuItem extends Component {
                 </Menu.Item>
             </Link>
 
-            {/* <Link  to="/drinks">
+            <Link  to="/private">
                 <Menu.Item as='a'>
-                        Drinks
+                        Private Events
                 </Menu.Item>
-            </Link> */}
+            </Link>
 
-            <Link  to="/info">
+            {/* <Link  to="/info">
                 <Menu.Item as='a'>
                         Info
                 </Menu.Item>
-            </Link>
+            </Link> */}
 
-            <Link  to="/contact">
+            {/* <Link  to="/contact">
                 <Menu.Item as='a'>
                         Contact
                 </Menu.Item>
-            </Link>
-            
+            </Link> */}
+
         </Sidebar>
         </div>
         </div>
