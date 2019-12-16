@@ -19,9 +19,9 @@ import Home from '../Home/Home';
 // import Drinks from '../Drinks/Drinks';
 import './App.css';
 import Menu from '../Menu/Menu';
-import Tacos from '../Tacos/Tacos';
-import Rolls from '../Rolls/Rolls';
-import Appetizers from '../Appetizers/Appetizers';
+import Food from '../Food/Food';
+// import Rolls from '../Rolls/Rolls';
+// import Appetizers from '../Appetizers/Appetizers';
 import Nav from '../Nav/Nav';
 
 
@@ -70,10 +70,10 @@ class App extends Component {
 
             <Route
               exact
-              path="/tacos"
-              component={Tacos}
+              path="/food"
+              component={Food}
             />
-
+{/* 
             <Route
               exact
               path="/rolls"
@@ -84,7 +84,7 @@ class App extends Component {
               exact
               path="/appetizers"
               component={Appetizers}
-            />
+            /> */}
 
             <Route
               exact

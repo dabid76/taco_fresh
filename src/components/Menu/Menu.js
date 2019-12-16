@@ -84,7 +84,7 @@ class MenuItem extends Component {
                             </ExpansionPanelDetails>
                         </ExpansionPanel> */}
 
-            <Link  to="/menu">
+            <Link  to="/food">
                 <Menu.Item as='a'>
                         Menu
                 </Menu.Item>

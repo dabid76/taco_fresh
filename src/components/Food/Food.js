@@ -1,21 +1,25 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
 import {Header, Icon} from 'semantic-ui-react'
-import './Tacos.css'
+import './Food.css'
 import A1 from '../images/A1.jpg'
 
 
-class Tacos extends Component {
+class Food extends Component {
 
     render() {
         return (
             <div className="tacos">
                 <div  className="picTacos">
-                    <h2>
-                        Tacos Menu
-                        {/* <img src={A1} alt='one'/> */}
-                    </h2>
-                </div>
+                    <div className="grid-container">
+                    <main className="flexbox">
+                    <div className="grid-item">
+                        <img src={A1} alt='one' height="136px" width="300px" />
+                        {/* <h2>Menu</h2> */}Main Menu
+                    </div>
+                    </main>
+                    </div>
+                    </div>
                 <ul className="leaders">
                     <div className="T1">
                         <li>
@@ -28,9 +32,9 @@ class Tacos extends Component {
                                 Honey Mayo Aioli
                             </p>
                         </span>
-                    </div>
+                    {/* </div>
 
-                    <div className="T2">
+                    <div className="T2"> */}
                         <li>
                             <span>T2. Brisket</span>
                             <span>$3.75</span>
@@ -41,9 +45,9 @@ class Tacos extends Component {
                                 Cilantro & Chipotle Aioli
                             </p>
                         </span>
-                    </div>
+                    {/* </div>
 
-                    <div className="T1">
+                    <div className="T1"> */}
                         <li>
                             <span>T3. Bulgogi</span>
                             <span>$3.75</span>
@@ -53,9 +57,9 @@ class Tacos extends Component {
                                 Korean BBQ Steak, Coleslaw, Cilantro, Pickled Ginger & Chipotle Aioli
                             </p>
                         </span>
-                    </div>
+                    {/* </div>
 
-                    <div className="T2">
+                    <div className="T2"> */}
                         <li>
                             <span>T4. Carne Asada</span>
                             <span>$3.75</span>
@@ -65,15 +69,9 @@ class Tacos extends Component {
                                 Marinated Steak, Pico De Gallo, Queso Fresco Cheese, Cilantro & Chipotle Aioli
                             </p>
                         </span>
-                    </div>
+                    {/* </div>
 
-                    <div  className="picTacos">
-                        <h2>
-                        {/* <img src={A1} height='50%' width='50%' /> */}
-                        </h2>
-                    </div>
-
-                    <div className="T1">
+                    <div className="T1"> */}
                         <li>
                             <span>T5. Tradition Taco</span>
                             <span>$3.25</span>
@@ -83,9 +81,9 @@ class Tacos extends Component {
                                 Seasoned Ground Beef, Cheddar Cheese & Pico De Gallo
                             </p>
                         </span>
-                    </div>
+                    {/* </div>
 
-                    <div className="T2">
+                    <div className="T2"> */}
                         <li>
                             <span>T6. Crispy Shrimp</span>
                             <span>$3.75</span>
@@ -95,9 +93,9 @@ class Tacos extends Component {
                                 Tempura Shrimp, Coleslaw, Cilantro & Sweet Spicy Aioli
                             </p>
                         </span>
-                    </div>
+                    {/* </div>
 
-                    <div className="T1">
+                    <div className="T1"> */}
                         <li>
                             <span>T7. Chicken Honey Crispy</span>
                             <span>$3.75</span>
@@ -107,9 +105,9 @@ class Tacos extends Component {
                                 Bread Chicken, Coleslaw, Cilantro, Diced Honey Crisp Apple & Spicy Honey Aioli
                             </p>
                         </span>
-                    </div>
+                    {/* </div>
 
-                    <div className="T2">
+                    <div className="T2"> */}
                         <li>
                             <span>T8. Spicy Salmon Taco</span> 
                             <span>$4.25</span>
@@ -119,15 +117,9 @@ class Tacos extends Component {
                             Spicy Salmon, Avocados, Cucumber & Spicy Mayo
                         </p>
                         </span>
-                    </div>
+                    {/* </div>
 
-                    <div  className="picTacos">
-                        <h2>
-                        {/* <img src={A1} height='50%' width='50%' /> */}
-                        </h2>
-                    </div>
-
-                    <div className="T1">
+                    <div className="T1"> */}
                         <li>
                             <span>T9. Spicy Tuna Taco</span>
                             <span>$4.25</span>
@@ -137,9 +129,9 @@ class Tacos extends Component {
                             Sushi Rice, Spicy Tuna, Avocado, Cucumber & Spicy Mayo
                         </p>
                         </span>
-                    </div>
+                    {/* </div>
 
-                    <div className="T2">
+                    <div className="T2"> */}
                         <li>
                             <span>T10. Spicy Yellowtail Taco</span>
                             <span>$4.50</span>
@@ -149,9 +141,9 @@ class Tacos extends Component {
                             Sushi Rice, Spicy Yellow, Avocados, Cucumber & Spicy Mayo
                         </p>
                         </span>
-                    </div>
+                    {/* </div>
 
-                    <div className="T1">
+                    <div className="T1"> */}
                         <li>
                             <span>T11. Crunchy Crab Taco</span>
                             <span>$4.25</span>
@@ -161,9 +153,9 @@ class Tacos extends Component {
                             Sushi Rice, Crab Mix, Avocado, Cucumber, Flake & Eel Sauce
                         </p>
                         </span>
-                    </div>
+                    {/* </div>
 
-                    <div className="T2">
+                    <div className="T2"> */}
                         <li>
                             <span>T12. Tempura Shrimp Taco</span>
                             <span>$4.25</span>
@@ -184,4 +176,4 @@ const mapStateToProps = reduxStore => {
     return {reduxStore}; // end return
 }; // end mapStateToProps
 
-export default connect(mapStateToProps)(Tacos);
+export default connect(mapStateToProps)(Food);

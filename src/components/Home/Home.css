@@ -52,17 +52,7 @@
   margin-bottom: 10px;
 }
 
-  .flexbox {
-    /* display: flex;
-    justify-content: space-between;
-    width: 90%;
-    height: 100vh;   */
-
-    /* display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 40vh 30vh 30vh;
-    grid-gap: 10px; */
-
+  /* .flexbox {
     font-family: 'Courgette', cursive;
 
     display: -ms-flexbox; 
@@ -70,31 +60,6 @@
     -ms-flex-wrap: wrap; 
     flex-wrap: wrap;
     padding: 0 4px;
-
-    /* margin: 0 auto;
-    padding: 15px;
-    grid-template-columns: 200px 1fr 200px;
-    grid-template-rows: auto 1fr auto;
-    height: 100vh; */
-  }
-  
-  /* .flexbox .board {
-    display: flex;
-    flex-direction: column;
-  
-    width: 100%;
-    max-width: 300px;
-  
-    background-color: #313131;
-  
-    padding: 15px;
-  }
-  
-  .flexbox .board .card {
-    padding: 15px 25px;
-    background-color: #f3f3f3;
-  
-    cursor: pointer;
-    margin-bottom: 15px;
   } */
+  
   
