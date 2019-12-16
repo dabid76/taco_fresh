@@ -93,3 +93,12 @@ p:last-child {
     font-size: 30px;
 	margin-left: 343px;
 } */
+
+.wine {
+    border-bottom: none;
+    border-right: none;
+	margin-left: 0.3%;
+	float: left;
+	border-right: groove;
+	padding: 5px;
+}

@@ -395,6 +395,121 @@ class Food extends Component {
                             </p>
                         </span>
 
+                        <h4>$6 Wine(per glass)</h4>
+
+                        <li className="wine">
+                            Cabernet
+                        </li>
+                        <li className="wine">
+                            Merlot
+                        </li>
+                        <li className="wine">
+                            Pinot Grigio
+                        </li>
+                        <li className="wine">
+                            Moscoto
+                        </li>
+                        <li className="wine">
+                            White Zinfandel
+                        </li>
+
+                        <br/>
+                        <br/>
+                        
+                        <li>
+                            <span>Stella Rose Black</span>
+                        </li>
+                        <span>
+                            <p className="description">
+                                Seductive Semi-Sweet & rich grape wine specialty with natural flavors of ripe blackberry, blueberry & raspberry
+                            </p>
+                        </span>
+
+                        <li>
+                            <span>Stella Rose Pink</span>
+                        </li>
+                        <span>
+                            <p className="description">
+                                Semi-Sweet sparking with vibrant pink hue that give off delicate fresh crisp peach honey & red berry qualities
+                            </p>
+                        </span>
+
+                        <li>
+                            <span>Stella Rose Red</span>
+                        </li>
+                        <span>
+                            <p className="description">
+                                Semi-Sweet semi sparkling crisp flavor that give off delicate fresh strawberry & red berry qualities
+                            </p>
+                        </span>
+
+                        <h2>ON TAP</h2>
+                        <h5>$5.50 (16oz.), $9.00 (25oz.)</h5>
+
+                        <li>
+                            <span>Surley - Furious</span>
+                        </li>
+                        <span>
+                            <p className="description">
+                                {/* Semi-Sweet semi sparkling crisp flavor that give off delicate fresh strawberry & red berry qualities */}
+                            </p>
+                        </span>
+
+                        <li>
+                            <span>Sam Adams - New England IPA</span>
+                        </li>
+                        <span>
+                            <p className="description">
+                                {/* Semi-Sweet semi sparkling crisp flavor that give off delicate fresh strawberry & red berry qualities */}
+                            </p>
+                        </span>
+
+                        <li>
+                            <span>Deshutes - Fresh Squeezed IPA</span>
+                        </li>
+                        <span>
+                            <p className="description">
+                                {/* Semi-Sweet semi sparkling crisp flavor that give off delicate fresh strawberry & red berry qualities */}
+                            </p>
+                        </span>
+
+                        <h5>$4.50 (16oz.), $8.00 (25oz.)</h5>
+
+                        <li>
+                            <span>Stella Artois</span>
+                        </li>
+                        <li>
+                            <span>Blue Moon</span>
+                        </li>
+                        <li>
+                            <span>Coors Light Blue Moon</span>
+                        </li>
+                        <li>
+                            <span>Dos Equis Lager Especial</span>
+                        </li>
+                        <li>
+                            <span>Modelo</span>
+                        </li>
+                        <li>
+                            <span>Sapporo</span>
+                        </li>
+                        <li>
+                            <span>Angry Cider</span>
+                        </li>
+
+                        <h2>$4 Bottle</h2>
+                        <li className="wine">
+                            Corona Extra
+                        </li>
+                        <li className="wine">
+                            Heineken
+                        </li>
+                        <li className="wine">
+                            Blue Moon
+                        </li>
+
+
+
                     </div>
                 </ul>
             </div>
