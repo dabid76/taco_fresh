@@ -1,13 +1,15 @@
-.photo {
+.name {
     margin-left: 123px;
 }
 
-/* .carousel img {
-    width: 10%;
+/* .photo {
+    margin-left: 63px;
 } */
 
 .carouselImg  {
     height: 300px;
+    /* margin-left: 63px; */
+
 }
 
 imag.carouselImg,
