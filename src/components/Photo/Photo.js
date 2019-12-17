@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import {connect} from 'react-redux';
 import { Header, Icon } from 'semantic-ui-react'
+import './Photo.css'
+// import "react-responsive-carousel/lib/styles/carousel.min.css";
+
 
 import Tacos from './TacosPhoto'
 import Rolls from './RollsPhoto'
-// import Appetizers from './AppetizersPhoto'
-// import Drinks from './DrinksPhoto'
-// import Restaurant from './RestaurantPhoto'
 
 
 class Photo extends Component {
@@ -31,7 +31,7 @@ class Photo extends Component {
 
     render() {
     return (
-        <div className="contact">
+        <div className="photo">
             <h2>
                 Photo Gallery
             </h2>
