@@ -47,48 +47,43 @@ class MenuItem extends Component {
                     <img src={logo} height='50px' width='50px' position='fixed' />
                 </Menu.Item>
             </Link>
-{/* 
+
             <ExpansionPanel expanded={this.state.expanded} onChange={this.handleExpand}>
                     <ExpansionPanelSummary
                         expandIcon={<ExpandMoreIcon />}
                         aria-controls="panel1a-content"
                         id="panel1a-header"
                         style={{backgroundColor:'#1b1c1d', color: 'white',}}
-                    >   Menu
+                    >   Menu 
                         </ExpansionPanelSummary>
                         <ExpansionPanelDetails>
                         <Table>
                             <TableBody>
                             <TableRow>
-                            <Link className="nav-link" to="/tacos">
-                                <TableCell style={{backgroundColor:'#1b1c1d', color: 'white',}}>Tacos</TableCell>
+                            <Link className="nav-link" to="/food">
+                                <TableCell style={{backgroundColor:'#1b1c1d', color: 'white',}}>Dine</TableCell>
                             </Link>
                             </TableRow>                               
                             <TableRow>
-                            <Link className="nav-link" to="/rolls">
-                                <TableCell style={{backgroundColor:'#1b1c1d', color: 'white',}}>Rolls</TableCell>
+                            <Link className="nav-link" to="/drinks">
+                                <TableCell style={{backgroundColor:'#1b1c1d', color: 'white',}}>Drinks</TableCell>
                             </Link>
                                 </TableRow>
                             <TableRow>
-                            <Link className="nav-link" to="/appetizers">
-                                <TableCell style={{backgroundColor:'#1b1c1d', color: 'white',}}>Appetizers</TableCell>
-                            </Link>
-                            </TableRow>
-                            <TableRow>
-                            <Link className="nav-link" to="/drinks">
-                                <TableCell style={{backgroundColor:'#1b1c1d', color: 'white',}}>Drinks</TableCell>
+                            <Link className="nav-link" to="/happy">
+                                <TableCell style={{backgroundColor:'#1b1c1d', color: 'white',}}>Happy Hours</TableCell>
                             </Link>
                             </TableRow>
                             </TableBody>
                             </Table>
                             </ExpansionPanelDetails>
-                        </ExpansionPanel> */}
+                        </ExpansionPanel>
 
-            <Link  to="/food">
+            {/* <Link  to="/food">
                 <Menu.Item as='a'>
                         Menu
                 </Menu.Item>
-            </Link>
+            </Link> */}
 
             <Link  to="/about">
                 <Menu.Item as='a'>

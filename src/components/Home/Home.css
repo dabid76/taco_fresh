@@ -1,6 +1,8 @@
 .home {
     margin-left: 123px;
-    /* position: fixed; */
+    background: url('../images/taco2.jpg');
+    background-size: cover;
+    height: 600px;
 }
 
 /* .grid-container {

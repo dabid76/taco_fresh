@@ -3,36 +3,27 @@ import {connect} from 'react-redux';
 import { Header, Icon } from 'semantic-ui-react'
 import './Home.css'
 
-import A0 from '../images/A0.jpg'
-import A1 from '../images/A1.jpg'
-import A2 from '../images/A2.jpg'
-import A3 from '../images/A3.jpg'
-import A4 from '../images/A4.jpg'
-
-import T1 from '../images/T1.jpg'
-import T2 from '../images/T2.jpg'
-import T3 from '../images/T3.jpg'
-import T4 from '../images/T4.jpg'
-import T5 from '../images/T5.jpg'
+import taco2 from '../images/taco2.jpg'
 
 
 
 class Home extends Component {
     menu = (propertyName) =>{
         console.log('this is happening', propertyName)
-        if (propertyName === 'Tacos') {
-            this.props.history.push('/tacos')
+        if (propertyName === 'Food') {
+            this.props.history.push('/food')
             this.setState({ open: false });
-        } else if (propertyName === 'Rolls') {
-            this.props.history.push('/rolls')
-            this.setState({ open: false });
-        } else if (propertyName === 'Drinks') {
-            // this.props.history.push('/drinks')
-            this.setState({ open: false });
-        } else if (propertyName === 'Appetizers') {
-        this.props.history.push('/appetizers')
-        this.setState({ open: false });
         }
+        //  else if (propertyName === 'Rolls') {
+        //     this.props.history.push('/rolls')
+        //     this.setState({ open: false });
+        // } else if (propertyName === 'Drinks') {
+        //     // this.props.history.push('/drinks')
+        //     this.setState({ open: false });
+        // } else if (propertyName === 'Appetizers') {
+        // this.props.history.push('/appetizers')
+        // this.setState({ open: false });
+        // }
     }
 
     render() {
@@ -41,8 +32,8 @@ class Home extends Component {
             {/* <p>
             Taco's Fresh Sport + Cantina first opened in 2017 and was sold to two brothers Khue Vang and Lue Vang in Octover of 2018. Both brothers have been in the restaurant industry over 20 years as sushi chefs. The Two brothers launch their first grand opening in December of 2018. The restaurant is a fusion of Asian and Mexican fod. They serve taco, sushi, and taco-sushi and ramen.
             </p> */}
-            <div onClick={(event) => this.menu('Tacos', event)}>
-                <img src={A0}  className="idk" />
+            <div onClick={(event) => this.menu('Food', event)}>
+                {/* <img src={taco2}  className="idk" /> */}
                 {/* <img src={A1} width="90%" height="100vh" />
                 <img src={A2} width="90%" height="100vh" />
                 <img src={A3} width="90%" height="100vh" />
@@ -67,13 +58,13 @@ class Home extends Component {
             </div> */}
         {/* </main> */}
 
-        <div className="contact">
+        {/* <div className="contact">
             <p>Phone: <a href="tel:651 777 3966">(651)777-3966</a></p>
             <p>location: 3156 Century Avenue North, Mahtomedi, Minnesota 55110</p>
             <p>Hours: Sunday-Thursday 11AM-9PM ; Friday & Saturday 11AM-12AM</p>
             <p>Email: <a href="mailto:tacofreshfusion@yahoo.com" className="contact-link">tacofreshfusion@yahoo.com</a></p>
             <p>Follow us on <a href="https://www.facebook.com/tacosfreshasianfusionsportscantina/">Facebook</a></p>
-        </div> 
+        </div>  */}
         </div>
 
         );

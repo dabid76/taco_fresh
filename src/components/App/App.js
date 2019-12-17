@@ -8,21 +8,25 @@ import {
   Switch,
 } from 'react-router-dom';
 
+import './App.css';
+
+
 import {connect} from 'react-redux';
 
+import Nav from '../Nav/Nav';
+import Menu from '../Menu/Menu';
+
 import InfoPage from '../InfoPage/InfoPage';
-import Footer from '../Footer/Footer';
 import AboutPage from '../AboutPage/AboutPage';
 import Contact from '../Contact/Contact';
 import Photo from '../Photo/Photo';
 import Home from '../Home/Home';
-// import Drinks from '../Drinks/Drinks';
-import './App.css';
-import Menu from '../Menu/Menu';
+
 import Food from '../Food/Food';
-// import Rolls from '../Rolls/Rolls';
-// import Appetizers from '../Appetizers/Appetizers';
-import Nav from '../Nav/Nav';
+import Drinks from '../Drinks/Drinks';
+import Happy from '../Happy/Happy';
+
+import Footer from '../Footer/Footer';
 
 
 // import styled from 'styled-components';
@@ -73,30 +77,24 @@ class App extends Component {
               path="/food"
               component={Food}
             />
-{/* 
+
             <Route
               exact
-              path="/rolls"
-              component={Rolls}
+              path="/drinks"
+              component={Drinks}
             />
 
             <Route
               exact
-              path="/appetizers"
-              component={Appetizers}
-            /> */}
+              path="/happy"
+              component={Happy}
+            />
 
             <Route
               exact
               path="/photo"
               component={Photo} 
             />
-
-            {/* <Route
-              exact
-              path="/drinks"
-              component={Drinks}
-            /> */}
 
             <Route
               exact

@@ -1,9 +1,10 @@
 footer {
     /* margin-top: 70%; */
-    margin-left: 12vw;
+    margin-left: 123px;
     /* position: sticky; */
-    position: absolute;
+    /* position: absolute; */
     bottom: 5px;
     height: 20px;
+    padding-top: 20px;
     /* width: 100%; */
 }
