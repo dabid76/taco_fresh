@@ -1,7 +1,9 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
 import {Header, Icon} from 'semantic-ui-react'
-import A1 from '../images/A1.jpg'
+import drink2 from '../images/drink2.jpg'
+import './Happy.css'
+
 
 
 class Happy extends Component {
@@ -10,203 +12,80 @@ class Happy extends Component {
         return (
             <div className="tacos">
                 <div  className="picTacos">
-                    <div className="grid-container">
+                    <div className="happy-grid-container">
                     <main className="flexbox">
                     <div className="grid-item">
-                        <img src={A1} alt='one' height="136px" width="300px" />
-                        {/* <h2>Menu</h2> */}Main Menu
+                        {/* <img src={drink2} alt='one' height="136px" width="300px" /> */}
+                        {/* <h2>Menu</h2> */}Happy Hour
                     </div>
                     </main>
                     </div>
                     </div>
+                    <h2>Daily Happy Hours Specials!</h2>
+                    <h2>3:00 PM - 6:00 PM</h2>
                 <ul className="leaders">
                     <div className="T1">
-                        <h3>Drinks</h3>
-                        <h4>Margaritas/Cocktails</h4>
-                        <h5>$7.00 (13oz.), $9.00 (16oz.), $12.00 (24oz.)</h5>
+                        <h3>$2.50 Tacos (exclude sushi tacos)</h3>
+                        <h3>$3 Beers</h3>
                         
                         <li>
-                            <span>House Margarita</span>
+                            <span>Blue Moon Bottle</span>
                         </li>
+                        <li>
+                            <span>Heineken Bottle</span>
+                        </li>
+                        <li>
+                            <span>Corona Bottle</span>
+                        </li>                        
+                        <li>
+                            <span>Angry Orchard (16oz. tap)</span>
+                        </li>
+                        <li>
+                            <span>Modelo (16oz. tap)</span>
+                        </li>
+
+                        <h3>$4 Wine (per glass)</h3>
+                        <h3>$5 House Margarita (13oz)</h3>
+                        <h3>$5 Sushi Maki Rolls</h3>
+
+                        <div className="contact"></div>
+
+                        <h2>Daily Specials</h2>
+                        <h3>Monday</h3>
+                        <h4>50% OFF Sushi Maki Roll</h4>
+
+                        <h3>Tuesday</h3>
+                        <h4>$1.99 Traditional Taco(1)</h4>
+
+                        <h3>Wednesday</h3>
+                        <h4>$9 Specialty Rolls</h4>
+
+                        <h3>Thursday</h3>
+                        <h4>Thirsty Thursday, $5 Beers, (25oz. tap)</h4>
+
+                        <h3>Friday</h3>
+                        <h4>Buy 1 Get 1 Half OFF Bar Drinks (exclude tap)</h4>
+
+                        <h2>Specials</h2>
+
+                        <h3>
+                            <span>$5 Pho</span>
+                        </h3>
                         <span>
                             <p className="description">
-                                Tequila, Lime, Simple Syrup, Triple Sec, Swet & Sour
+                                [Noodle Soup: Beef, beef meatball, green onion, cilantro, onion, bean sprouts, jalapeno & basil]
                             </p>
                         </span>
+                        <span>Only Available 11AM-9PM</span>
 
-                        <li>
-                            <span>Triple Smooth Margarita</span>
-                        </li>
-                        <span>
-                            <p className="description">
-                                Jameson Whiskey, Grand Marnier, Lime, Pineapple Juice & Ginger Ale
-                            </p>
-                        </span>
-
-                        <li>
-                            <span>Fiesta Margarita</span>
-                        </li>
-                        <span>
-                            <p className="description">
-                                Reposado Tequila, Grapefruit, Lime, Simple Syrup & Triple Sec
-                            </p>
-                        </span>
-
-                        <h5>$8.00 (13oz.), $10.00 (16oz.), $13.00 (24oz.)</h5>
-                        
-                        <li>
-                            <span>Extreme Margarita</span>
-                        </li>
-                        <span>
-                            <p className="description">
-                                Patron Tequila, Grand Marnier, Lime, Simple Syrup & Triple Sec
-                            </p>
-                        </span>
-
-                        <h5>$9.00 (16oz.), $12.00 (24oz.)</h5>
-
-                        <li>
-                            <span>Green Lady Cocktail</span>
-                        </li>
-                        <span>
-                            <p className="description">
-                                Captain Morgan, Malibu Rum, Blue Curacao, Triple Sec & Simple Syrup
-                            </p>
-                        </span>
-
-                        <li>
-                            <span>Sex on the Beach Cocktail</span>
-                        </li>
-                        <span>
-                            <p className="description">
-                                Vodka, Rum, Peach Schnapps, Orange, Pineapple, Half & Half, & Cranberry
-                            </p>
-                        </span>
-
-                        <li>
-                            <span>Sex with the Captain Cocktail</span>
-                        </li>
-                        <span>
-                            <p className="description">
-                                Captain Morganm Amaretto , Peach Schnapps, Cranberry & Orange
-                            </p>
-                        </span>
-
-                        <h4>$6 Wine(per glass)</h4>
-
-                        <li className="wine">
-                            Cabernet
-                        </li>
-                        <li className="wine">
-                            Merlot
-                        </li>
-                        <li className="wine">
-                            Pinot Grigio
-                        </li>
-                        <li className="wine">
-                            Moscoto
-                        </li>
-                        <li className="wine">
-                            White Zinfandel
-                        </li>
-
-                        <br/>
-                        <br/>
-                        
-                        <li>
-                            <span>Stella Rose Black</span>
-                        </li>
-                        <span>
-                            <p className="description">
-                                Seductive Semi-Sweet & rich grape wine specialty with natural flavors of ripe blackberry, blueberry & raspberry
-                            </p>
-                        </span>
-
-                        <li>
-                            <span>Stella Rose Pink</span>
-                        </li>
-                        <span>
-                            <p className="description">
-                                Semi-Sweet sparking with vibrant pink hue that give off delicate fresh crisp peach honey & red berry qualities
-                            </p>
-                        </span>
-
-                        <li>
-                            <span>Stella Rose Red</span>
-                        </li>
-                        <span>
-                            <p className="description">
-                                Semi-Sweet semi sparkling crisp flavor that give off delicate fresh strawberry & red berry qualities
-                            </p>
-                        </span>
-
-                        <h2>ON TAP</h2>
-                        <h5>$5.50 (16oz.), $9.00 (25oz.)</h5>
-
-                        <li>
-                            <span>Surley - Furious</span>
-                        </li>
-                        <span>
-                            <p className="description">
-                                {/* Semi-Sweet semi sparkling crisp flavor that give off delicate fresh strawberry & red berry qualities */}
-                            </p>
-                        </span>
-
-                        <li>
-                            <span>Sam Adams - New England IPA</span>
-                        </li>
-                        <span>
-                            <p className="description">
-                                {/* Semi-Sweet semi sparkling crisp flavor that give off delicate fresh strawberry & red berry qualities */}
-                            </p>
-                        </span>
-
-                        <li>
-                            <span>Deshutes - Fresh Squeezed IPA</span>
-                        </li>
-                        <span>
-                            <p className="description">
-                                {/* Semi-Sweet semi sparkling crisp flavor that give off delicate fresh strawberry & red berry qualities */}
-                            </p>
-                        </span>
-
-                        <h5>$4.50 (16oz.), $8.00 (25oz.)</h5>
-
-                        <li>
-                            <span>Stella Artois</span>
-                        </li>
-                        <li>
-                            <span>Blue Moon</span>
-                        </li>
-                        <li>
-                            <span>Coors Light Blue Moon</span>
-                        </li>
-                        <li>
-                            <span>Dos Equis Lager Especial</span>
-                        </li>
-                        <li>
-                            <span>Modelo</span>
-                        </li>
-                        <li>
-                            <span>Sapporo</span>
-                        </li>
-                        <li>
-                            <span>Angry Cider</span>
-                        </li>
-
-                        <h2>$4 Bottle</h2>
-                        <li className="wine">
-                            Corona Extra
-                        </li>
-                        <li className="wine">
-                            Heineken
-                        </li>
-                        <li className="wine">
-                            Blue Moon
-                        </li>
-
-
-
+                        <h3>
+                            <span>$8 Papaya</span>
+                        </h3>
+                        <span>Only Available Fri & Sat: 7PM - Closed</span>
+                       
+                        <h3>
+                            <span>$10 Laab Namtok</span>
+                        </h3>
                     </div>
                 </ul>
             </div>

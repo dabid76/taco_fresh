@@ -78,13 +78,22 @@ p:last-child {
 	width: auto;
 	text-align: center;
 
+
+	/* background: url('../images/A1.jpg') no-repeat center center fixed;
+    background-size: cover; */
+
 }
 
 
-.grid-container {
-	grid-template-columns: auto auto auto auto;
-	grid-gap: 10px;
-	padding: 10px;
+.taco-grid-container {
+	/* grid-template-columns: auto auto auto auto; */
+	/* grid-gap: 10px;
+	padding: 10px; */
+	/* background: url('../images/A1.jpg') no-repeat center center fixed; */
+	background: url('../images/A1.jpg');
+	/* background-size: fit; */
+	/* max-width: 100%;  */
+	/* background-size: 100% 100% */
 }
 
 /* h2 {

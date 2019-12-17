@@ -11,10 +11,10 @@ class Food extends Component {
         return (
             <div className="tacos">
                 <div  className="picTacos">
-                    <div className="grid-container">
+                    <div className="taco-grid-container">
                     <main className="flexbox">
                     <div className="grid-item">
-                        <img src={A1} alt='one' height="136px" width="300px" />
+                        {/* <img src={A1} alt='one' height="136px" width="300px" /> */}
                         {/* <h2>Menu</h2> */}Main Menu
                     </div>
                     </main>

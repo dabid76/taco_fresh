@@ -1,7 +1,9 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
 import {Header, Icon} from 'semantic-ui-react'
-import A1 from '../images/A1.jpg'
+import drink3 from '../images/drink3.jpg'
+import './Drinks.css'
+
 
 
 class Drinks extends Component {
@@ -10,11 +12,11 @@ class Drinks extends Component {
         return (
             <div className="tacos">
                 <div  className="picTacos">
-                    <div className="grid-container">
+                    <div className="drink-grid-container">
                     <main className="flexbox">
                     <div className="grid-item">
-                        <img src={A1} alt='one' height="136px" width="300px" />
-                        {/* <h2>Menu</h2> */}Main Menu
+                        {/* <img src={drink3} alt='one' height="136px" width="300px" /> */}
+                        {/* <h2>Menu</h2> */}Drinks Menu
                     </div>
                     </main>
                     </div>

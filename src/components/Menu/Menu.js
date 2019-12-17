@@ -93,7 +93,7 @@ class MenuItem extends Component {
 
             <Link  to="/photo">
                 <Menu.Item as='a'>
-                        Photo Gallary
+                        Gallary
                 </Menu.Item>
             </Link>
 
