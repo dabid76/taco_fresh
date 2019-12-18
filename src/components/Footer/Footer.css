@@ -10,4 +10,11 @@ footer {
     /* width: 100%; */
 }
 
+.contact {
+    border-top: 6px solid red;
+    width: auto;
+    clear: both;
+
+  }
+
 
