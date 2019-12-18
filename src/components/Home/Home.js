@@ -3,7 +3,7 @@ import {connect} from 'react-redux';
 import { Header, Icon } from 'semantic-ui-react'
 import './Home.css'
 
-import taco2 from '../images/taco2.jpg'
+import tacos from '../images/tacos.jpg'
 
 
 
@@ -29,6 +29,8 @@ class Home extends Component {
     render() {
     return (
         <div className="home">
+            {/* <img src={tacos} width="100%" height="150%" alt="tacosPic" /> */}
+
             {/* <p>
             Taco's Fresh Sport + Cantina first opened in 2017 and was sold to two brothers Khue Vang and Lue Vang in Octover of 2018. Both brothers have been in the restaurant industry over 20 years as sushi chefs. The Two brothers launch their first grand opening in December of 2018. The restaurant is a fusion of Asian and Mexican fod. They serve taco, sushi, and taco-sushi and ramen.
             </p> */}
