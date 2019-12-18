@@ -15,9 +15,9 @@ class RollsPhoto extends Component {
     render() {
     return (
         <div className="photo">
-            <h2>
+            <h1>
                 Rolls Gallery
-            </h2>
+            </h1>
             <Carousel className="carousel" >
                     <Carousel.Item >
                             <img
@@ -50,11 +50,6 @@ class RollsPhoto extends Component {
                             />
                     </Carousel.Item>
                 </Carousel>
-                {/* <img src={T1} width="100vw" height="100vh" />
-                <img src={T2} width="100vw" height="100vh" />
-                <img src={T3} width="100vw" height="100vh" />
-                <img src={T4} width="100vw" height="100vh" />
-                <img src={T5} width="100vw" height="100vh" /> */}
         </div> 
         );
     }

@@ -16,6 +16,13 @@ import A2 from '../images/A2.jpg'
 import A3 from '../images/A3.jpg'
 import A4 from '../images/A4.jpg'
 
+import A5 from '../images/A5.jpg'
+import A6 from '../images/A6.jpg'
+import A7 from '../images/A7.jpg'
+import A8 from '../images/A8.jpg'
+import A9 from '../images/A9.jpg'
+import A10 from '../images/A10.jpg'
+import A11 from '../images/A11.jpg'
 
 class TacosPhoto extends Component {
 
@@ -23,9 +30,9 @@ class TacosPhoto extends Component {
     
     return (
         <div className="photo">
-            <h2>
+            <h1>
                 Tacos Gallery
-            </h2>
+            </h1>
             <Carousel className="carousel" >
                     <Carousel.Item >
                             <img
@@ -36,7 +43,7 @@ class TacosPhoto extends Component {
                     <Carousel.Item >
                             <img
                                 className="carouselImg"
-                                src={A1}
+                                src={A3}
                             />
                     </Carousel.Item>
                     <Carousel.Item >
@@ -55,6 +62,48 @@ class TacosPhoto extends Component {
                             <img
                                 className="carouselImg"
                                 src={A4}
+                            />
+                    </Carousel.Item>
+                    <Carousel.Item >
+                            <img
+                                className="carouselImg"
+                                src={A5}
+                            />
+                    </Carousel.Item>
+                    <Carousel.Item >
+                            <img
+                                className="carouselImg"
+                                src={A6}
+                            />
+                    </Carousel.Item>
+                    <Carousel.Item >
+                            <img
+                                className="carouselImg"
+                                src={A7}
+                            />
+                    </Carousel.Item>
+                    <Carousel.Item >
+                            <img
+                                className="carouselImg"
+                                src={A8}
+                            />
+                    </Carousel.Item>
+                    <Carousel.Item >
+                            <img
+                                className="carouselImg"
+                                src={A9}
+                            />
+                    </Carousel.Item>
+                    <Carousel.Item >
+                            <img
+                                className="carouselImg"
+                                src={A10}
+                            />
+                    </Carousel.Item>
+                    <Carousel.Item >
+                            <img
+                                className="carouselImg"
+                                src={A11}
                             />
                     </Carousel.Item>
                 </Carousel>

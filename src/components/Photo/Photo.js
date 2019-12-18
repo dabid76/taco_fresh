@@ -33,7 +33,7 @@ class Photo extends Component {
     return (
         <div className="name">
             <h2>
-                Photo Gallery
+                {/* Photo Gallery */}
             </h2>
             <div onClick={() => this.photo('Tacos Photo')}>
                 <Tacos />

@@ -23,7 +23,7 @@ class Happy extends Component {
                     </div>
                     <h2>Daily Happy Hours Specials!</h2>
                     <h2>3:00 PM - 6:00 PM</h2>
-                <ul className="leaders">
+                    <ul className="leaders">
                     <div className="T1">
                         <h3>$2.50 Tacos (exclude sushi tacos)</h3>
                         <h3>$3 Beers</h3>
@@ -47,9 +47,9 @@ class Happy extends Component {
                         <h3>$4 Wine (per glass)</h3>
                         <h3>$5 House Margarita (13oz)</h3>
                         <h3>$5 Sushi Maki Rolls</h3>
-
+<br/>
                         <div className="contact"></div>
-
+<br/>
                         <h2>Daily Specials</h2>
                         <h3>Monday</h3>
                         <h4>50% OFF Sushi Maki Roll</h4>

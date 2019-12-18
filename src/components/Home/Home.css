@@ -1,8 +1,9 @@
 .home {
     margin-left: 123px;
-    background: url('../images/tacos.jpg') no-repeat center center fixed;
-    /* background-size: cover; */
-    height: 715px;
+    background: url('../images/tacos.jpg') no-repeat center center ;
+    background-size: contain;
+    height: 31pc;
+    height: 528px;
 }
 
 /* .grid-container {
@@ -40,10 +41,10 @@
     width: 20vw;
   } */
 
-/* .contact {
+.contact {
   border-top: 6px solid red;
   width: auto;
-} */
+}
 
 .idk {
   border-radius: 50%;

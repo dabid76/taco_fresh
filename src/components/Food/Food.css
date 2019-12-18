@@ -7,6 +7,7 @@
 	/* width: 900px; */
 	width: auto;
 	padding: 15px;
+	font-size: 16px;
 }
 
 .T2 {
@@ -122,5 +123,9 @@ p:last-child {
 	margin-left: 0.3%;
 	float: left;
 	border-right: groove;
+	/* padding: 5px; */
+}
+
+li {
 	padding: 5px;
 }

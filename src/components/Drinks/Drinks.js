@@ -21,7 +21,7 @@ class Drinks extends Component {
                     </main>
                     </div>
                     </div>
-                <ul className="leaders">
+                    <ul className="leaders">
                     <div className="T1">
                         <h3>Drinks</h3>
                         <h4>Margaritas/Cocktails</h4>
@@ -206,9 +206,6 @@ class Drinks extends Component {
                         <li className="wine">
                             Blue Moon
                         </li>
-
-
-
                     </div>
                 </ul>
             </div>
