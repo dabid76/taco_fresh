@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import './Nav.css';
+import logo from '../images/logo.jpg'
+
 
 import ExpansionPanel from '@material-ui/core/ExpansionPanel';
 import ExpansionPanelSummary from '@material-ui/core/ExpansionPanelSummary';
@@ -13,6 +15,19 @@ import TableCell from '@material-ui/core/TableCell';
 import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 
+import { Header, Icon, Menu, Segment, Sidebar, Button } from 'semantic-ui-react'
+
+import { createMuiTheme, MuiThemeProvider } from '@material-ui/core';
+
+
+
+
+const theme = createMuiTheme({
+  transitions: {
+    // So we have `transition: none;` everywhere
+    create: () => 'none',
+  },
+});
 
 class Nav extends Component {
   
@@ -24,25 +39,40 @@ handleExpand = () => {
   this.setState({
       expanded: !this.state.expanded,
       hidden: false,
-      animation: 'push',
+      animation: 'overlay',
   })
+}
+
+myFunction = () => {
+  console.log('click')
+  var x = document.getElementById("nav");
+  if (x.className === "nav") {
+    x.className += " responsive";
+  } else {
+    x.className = "nav";
+  }
 }
 
 render () {
   return (
+    <MuiThemeProvider theme={theme}>
 
-  <div className="nav">
+  <div className="nav" id="nav">
     <Link to="/home">
+    <img src={logo} height='50px' width='50px' position='fixed' />
     </Link>
     <div className="nav-right">
-      {/* Always show this link since the about page is not protected */}
-      <ExpansionPanel expanded={this.state.expanded} onChange={this.handleExpand}>
+      <ExpansionPanel 
+      expanded={this.state.expanded} 
+      onChange={this.handleExpand} 
+      >
                     <ExpansionPanelSummary
                         expandIcon={<ExpandMoreIcon />}
                         aria-controls="panel1a-content"
                         id="panel1a-header"
                         style={{backgroundColor:'black', color: 'red',}}
-                    >   Menu 
+                        >
+                             Menu 
                         </ExpansionPanelSummary>
                         <ExpansionPanelDetails>
                         <Table>
@@ -76,8 +106,16 @@ render () {
       <Link className="nav-link" to="/private">
       Private Events
       </Link>
+
+
+      <a href="javascript:void(0);" className="icon" onClick={this.myFunction}>
+      <i className="fa fa-bars"></i>
+      </a>
+
     </div>
   </div>
+  </MuiThemeProvider>
+
   );
 }
 };

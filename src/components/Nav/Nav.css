@@ -5,7 +5,8 @@
 }
 
 .nav {
-  overflow: hidden;
+  /* display: block !important; */
+  /* overflow: hidden; */
   /* background-image: src="tacos.jpg"; */
   font-family: var(--heading-family) !important;
   background-size: 1700px 900px;
@@ -67,14 +68,21 @@ div.MuiIconButton-root {
   flex-grow: 0 !important;
 }
 
+
 @media screen and (max-width: 1299px) and (min-width: 1051px) {
   
   .nav-right button {
     margin: 30px 10px;
   }
+  .nav {
+    display: block !important;
+  }
+  i {
+    display: none !important ;
+  }
 }
 
-@media screen and (max-width: 764px) {
+@media screen and (max-width: 600px) {
   .nav-right {
     flex-direction: column;
     text-align: right;
@@ -84,5 +92,23 @@ div.MuiIconButton-root {
     min-width: 150px;
     text-align: center;
   }
+  .nav  a:not(:first-child) {display: none;}
+  .nav a.icon {
+    display: block;
+    position: absolute;
+  }
 }
+  
+@media screen and (max-width: 600px) {
+  /* .nav.responsive {position: absolute;} */
+  .nav.responsive .icon {
+    position: absolute;
 
+  }
+  .nav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+}
