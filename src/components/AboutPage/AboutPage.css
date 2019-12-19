@@ -7,12 +7,12 @@
     /* margin: 0 1% 1.5% 0; */
     width: 48.75%;
 
-    /* height: 145px;
+    /* height: 145px; */
     border-radius: 5%;
-    border-style: solid; */
+    border-style: solid;
     /* border-color: black; */
-    /* transform: rotate(360deg);
-    box-shadow: 5px 5px 5px grey; */
+    transform: rotate(360deg);
+    box-shadow: 5px 5px 5px grey;
     /* margin-left: 5%; */
 
     /* background-size: contain;
@@ -27,23 +27,48 @@
     /* margin: 0 1% 1.5% 0; */
     width: 48.75%;
 
-    /* height: 145px;
+    /* height: 145px; */
     border-radius: 5%;
-    border-style: solid; */
+    border-style: solid;
     /* border-color: black; */
-    /* transform: rotate(360deg);
-    box-shadow: 5px 5px 5px grey; */
+    transform: rotate(360deg);
+    box-shadow: 5px 5px 5px grey;
     /* margin-left: 5%;  */
 }
 
 .story {
-    border: dashed;
+    /* border: dashed; */
     /* margin-left: 83px; */
-    padding: 2%;
-    border-color: chartreuse;
+    /* padding: 2%;
+    border-color: chartreuse; */
     /* margin-right: 27px; */
-    float: right;
+    /* float: right; */
     /* margin: -20% 0% 0% 51%; */
-    /* width: 48.75%; */
-    font-size: 1.1em;
+    /* width: 48.75%;
+    font-size: 1.1em; */
 }
+
+@media screen and (max-width: 1299px) and (min-width: 1051px) {
+    .story {
+        float: right;
+        margin: 0 0 0 1%;
+        width: 48.75%;
+        font-size: 1.25em;
+        border: dashed;
+        padding: 2%;
+        border-color: chartreuse;
+        }
+  }
+  
+  @media screen and (max-width: 764px) {
+    .story{
+        /* float: right; */
+        margin: 0 0 0 1%;
+        width: 98.5%;
+        font-size: 1.25em;
+        border: dashed;
+        padding: 2%;
+        border-color: chartreuse;
+    }
+  }
+  

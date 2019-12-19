@@ -16,7 +16,12 @@ class AboutPage extends Component {
         <img src={tacos} className="no" />
       <div className="story">
         <p>
-          Taco's Fresh Sport + Cantina first opened in 2017 and was sold to two brothers Khue Vang and Lue Vang in Octover of 2018. Both brothers have been in the restaurant industry over 20 years as sushi chefs. The Two brothers launch their first grand opening in December of 2018. The restaurant is a fusion of Asian and Mexican fod. They serve taco, sushi, and taco-sushi and ramen.
+          Taco's Fresh Sport + Cantina first opened in 2017 and was sold to 
+          two brothers Khue Vang and Lue Vang in Octover of 2018. 
+          Both brothers have been in the restaurant industry over 20 years as sushi chefs. 
+          The Two brothers launch their first grand opening in December of 2018. 
+          The restaurant is a fusion of Asian and Mexican fod. 
+          They serve taco, sushi, and taco-sushi and ramen.
         </p>
       </div>
         <img src={tacos} className="yeah" />

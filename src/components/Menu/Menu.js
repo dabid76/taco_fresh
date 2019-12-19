@@ -25,7 +25,9 @@ class MenuItem extends Component {
 
     handleExpand = () => {
         this.setState({
-            expanded: !this.state.expanded
+            expanded: !this.state.expanded,
+            hidden: false,
+            animation: 'push',
         })
     }
 
@@ -38,9 +40,13 @@ class MenuItem extends Component {
             animation='push'
             icon='labeled'
             inverted
+            // vertical
+            // visible
+            // width='0px' 
+            onHide={() => this.setState({hidden: false})}
             vertical
-            visible
-            width='0px' 
+            visible={this.state.hidden}
+            width='thin' 
         >
             <Link to="/home">
                 <Menu.Item as='a'>
@@ -116,6 +122,18 @@ class MenuItem extends Component {
             </Link> */}
 
         </Sidebar>
+                        <div className='fp-panel-main'>
+                    <Sidebar.Pusher dimmed={this.state.hidden}>
+                        <Segment basic textAlign="left">
+                            <Link to="/home">
+                            </Link>
+                        <Button onClick={()=>{this.setState({hidden: true})}}>
+                            <Icon name="sidebar" color='blue'/>
+                            Menu
+                        </Button>
+                        </Segment>
+                    </Sidebar.Pusher>
+                </div>
         </div>
         </div>
     );

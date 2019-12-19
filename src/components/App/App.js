@@ -14,7 +14,7 @@ import './App.css';
 import {connect} from 'react-redux';
 
 import Nav from '../Nav/Nav';
-import Menu from '../Menu/Menu';
+// import Menu from '../Menu/Menu';
 
 import InfoPage from '../InfoPage/InfoPage';
 import AboutPage from '../AboutPage/AboutPage';
@@ -46,7 +46,7 @@ class App extends Component {
         <Nav />
 
         {/* <Head> */}
-        <Menu/>
+        {/* <Menu/> */}
         {/* </Head> */}
           <Switch>
             {/* Visiting localhost:3000 will redirect to localhost:3000/home */}
