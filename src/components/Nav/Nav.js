@@ -61,9 +61,6 @@ render () {
     <Link to="/home">
     <img src={logo} height='50px' width='50px' position='fixed' />
     </Link>
-    <a href="javascript:void(0);" className="icon" onClick={this.myFunction}>
-      <i className="fa fa-bars"></i>
-      </a>
     <div className="nav-right">
       {/* <ExpansionPanel 
       expanded={this.state.expanded} 
@@ -109,6 +106,7 @@ render () {
             </div>
       </div> */}
       
+      
 <div className="dropdown" id="dropdown">
 <Link className="nav-link-none">
 </Link>
@@ -120,6 +118,7 @@ render () {
 </div>
 </div>
 
+
       <Link className="nav-link" to="/about">
       About
       </Link>
@@ -129,14 +128,12 @@ render () {
       <Link className="nav-link" to="/private">
       Private Events
       </Link>
-
-      {/* <a href="javascript:void(0);" className="icon" onClick={this.myFunction}>
+      <a href="javascript:void(0);" className="icon" onClick={this.myFunction}>
       <i className="fa fa-bars"></i>
-      </a> */}
-      
-
+      </a>
     </div>
   </div>
+  
   </MuiThemeProvider>
 
   );
