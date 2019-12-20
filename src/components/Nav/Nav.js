@@ -61,8 +61,11 @@ render () {
     <Link to="/home">
     <img src={logo} height='50px' width='50px' position='fixed' />
     </Link>
+    <a href="javascript:void(0);" className="icon" onClick={this.myFunction}>
+      <i className="fa fa-bars"></i>
+      </a>
     <div className="nav-right">
-      <ExpansionPanel 
+      {/* <ExpansionPanel 
       expanded={this.state.expanded} 
       onChange={this.handleExpand} 
       >
@@ -95,8 +98,28 @@ render () {
                             </TableBody>
                             </Table>
                             </ExpansionPanelDetails>
-                        </ExpansionPanel>
-                        
+                        </ExpansionPanel> */}
+                 
+      {/* <div className="dropdown" id="nav">
+        <Link className="nav-link">Menu</Link>
+          <div className="dropdown-content">
+            <Link className="nav-link" to="/food">Dine</Link>
+            <Link className="nav-link" to="/drinks">Drinks</Link>
+            <Link className="nav-link" to="/happy">Happy Hours</Link>
+            </div>
+      </div> */}
+      
+<div className="dropdown" id="dropdown">
+<Link className="nav-link-none">
+</Link>
+<Link className="nav-link">Menu</Link>
+<div className="dropdown-content">
+<Link className="nav-link" to="/food">Dine</Link>
+<Link className="nav-link" to="/drinks">Drinks</Link>
+<Link className="nav-link" to="/happy">Happy Hours</Link>
+</div>
+</div>
+
       <Link className="nav-link" to="/about">
       About
       </Link>
@@ -107,10 +130,10 @@ render () {
       Private Events
       </Link>
 
-
-      <a href="javascript:void(0);" className="icon" onClick={this.myFunction}>
+      {/* <a href="javascript:void(0);" className="icon" onClick={this.myFunction}>
       <i className="fa fa-bars"></i>
-      </a>
+      </a> */}
+      
 
     </div>
   </div>
