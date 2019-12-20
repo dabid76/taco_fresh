@@ -131,6 +131,7 @@ div.MuiIconButton-root {
     right: 0;
     top: 0;
     position: absolute;
+    font-size: xx-large;
   }
   /* .dropdown  a:not(:first-child) {display: none;}
   .dropdown a.icon {
