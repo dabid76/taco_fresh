@@ -16,9 +16,9 @@ import {connect} from 'react-redux';
 import Nav from '../Nav/Nav';
 // import Menu from '../Menu/Menu';
 
-import InfoPage from '../InfoPage/InfoPage';
+// import InfoPage from '../InfoPage/InfoPage';
 import AboutPage from '../AboutPage/AboutPage';
-import Contact from '../Contact/Contact';
+import Private from '../Private/Private';
 import Photo from '../Photo/Photo';
 import Home from '../Home/Home';
 
@@ -68,12 +68,6 @@ class App extends Component {
 
             <Route
               exact
-              path="/contact"
-              component={Contact}
-            />
-
-            <Route
-              exact
               path="/food"
               component={Food}
             />
@@ -98,9 +92,15 @@ class App extends Component {
 
             <Route
               exact
+              path="/private"
+              component={Private}
+            />
+
+            {/* <Route
+              exact
               path="/info"
               component={InfoPage}
-            />
+            /> */}
 
             {/* If none of the other routes matched, we will show a 404. */}
             <Route render={() => <h1>404</h1>} />
