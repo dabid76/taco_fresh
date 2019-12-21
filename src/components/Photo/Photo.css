@@ -2,9 +2,10 @@
     /* margin-left: 123px; */
 }
 
-/* .photo {
-    margin-left: 63px;
-} */
+.image {
+    width: 40%;
+    margin: 2% 2% 2% 7%;
+}
 
 .carousel {
     width: 40%;
@@ -29,6 +30,8 @@
 .carousel-indicators { 
     margin-right: 21% !important;
     margin-left: 1% !important;
+    display: none !important;
+
     /* background-color: black; */
 }
 /* 

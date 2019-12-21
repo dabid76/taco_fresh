@@ -39,11 +39,9 @@ class TacosPhoto extends Component {
                                 className="carouselImg"
                                 src={A0}
                             />
-                    </Carousel.Item>
-                    <Carousel.Item >
                             <img
                                 className="carouselImg"
-                                src={A3}
+                                src={A1}
                             />
                     </Carousel.Item>
                     <Carousel.Item >
@@ -51,8 +49,6 @@ class TacosPhoto extends Component {
                                 className="carouselImg"
                                 src={A2}
                             />
-                    </Carousel.Item>
-                    <Carousel.Item >
                             <img
                                 className="carouselImg"
                                 src={A3}
@@ -63,8 +59,6 @@ class TacosPhoto extends Component {
                                 className="carouselImg"
                                 src={A4}
                             />
-                    </Carousel.Item>
-                    <Carousel.Item >
                             <img
                                 className="carouselImg"
                                 src={A5}
@@ -75,8 +69,6 @@ class TacosPhoto extends Component {
                                 className="carouselImg"
                                 src={A6}
                             />
-                    </Carousel.Item>
-                    <Carousel.Item >
                             <img
                                 className="carouselImg"
                                 src={A7}
@@ -87,8 +79,6 @@ class TacosPhoto extends Component {
                                 className="carouselImg"
                                 src={A8}
                             />
-                    </Carousel.Item>
-                    <Carousel.Item >
                             <img
                                 className="carouselImg"
                                 src={A9}
@@ -99,8 +89,6 @@ class TacosPhoto extends Component {
                                 className="carouselImg"
                                 src={A10}
                             />
-                    </Carousel.Item>
-                    <Carousel.Item >
                             <img
                                 className="carouselImg"
                                 src={A11}
