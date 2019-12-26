@@ -1,9 +1,16 @@
-.name {
-    /* margin-left: 123px; */
-}
+/* .name > img:hover{
+    opacity: 0.7;
+} */
+
+.dialog {
+    box-shadow: 0 8px 6px -6px black;
+    position: static;
+    left: 20%;
+    top: 10%;
+  }
 
 .image {
-    width: 40%;
+    width: 22%;
     margin: 2% 2% 2% 7%;
 }
 

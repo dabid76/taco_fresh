@@ -17,10 +17,11 @@
   color: #fc0909;
   text-align: center;
   text-decoration: none;
-  font-size: 15px;
+  font-size: 24px;
   cursor: pointer;
   outline:0;
-  font-family: var(--heading-family) !important;
+  font-family: 'Amatic SC', cursive;
+  /* font-family: var(--heading-family) !important; */
   font-weight: bold;
 }
 

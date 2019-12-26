@@ -31,30 +31,28 @@ import T5 from '../images/T5.jpg'
 
 class Photo extends Component {
 
-    photo = (propertyName) =>{
-        console.log('this is happening', propertyName)
+    // photo = (propertyName) =>{
+        // console.log('this is happening', propertyName)
         // if (propertyName === 'Tacos Photo') {
         //     this.props.history.push('/tacosPhoto')
         //     this.setState({ open: false });
-        // } 
-        // else if (propertyName === 'Rolls') {
-        //     this.props.history.push('/rolls')
-        //     this.setState({ open: false });
-        // } else if (propertyName === 'Drinks') {
-        //     // this.props.history.push('/drinks')
-        //     this.setState({ open: false });
-        // } else if (propertyName === 'Appetizers') {
-        // this.props.history.push('/appetizers')
-        // this.setState({ open: false });
-        // }
+    // }
+
+    state = { 
+        isOpen: false 
+    }
+
+    handleShowDialog = () => {
+    //   this.setState({ isOpen: !this.state.isOpen });
+      console.log('cliked');
     }
 
     render() {
     return (
         <div className="name">
-            <h2>
+            {/* <h2> */}
                 {/* Photo Gallery */}
-            </h2>
+            {/* </h2> */}
             {/* <div onClick={() => this.photo('Tacos Photo')}>
                 <Tacos />
             </div>
@@ -62,10 +60,25 @@ class Photo extends Component {
                 <Rolls />
             </div> */}
 <img
-className="image"
+className="small"
 src={A0}
 />
-<img
+{this.state.isOpen && (
+          <dialog
+            className="dialog"
+            style={{ position: 'absolute' }}
+            open
+            onClick={() => this.handleShowDialog()}
+          >
+            <img
+              className="image"
+              src={A0}
+              onClick={() => this.handleShowDialog()}
+              alt="no image"
+            />
+          </dialog>
+        )}
+{/* <img
 className="image"
 src={A1}
 />
@@ -128,7 +141,7 @@ src={T4}
 <img
 className="image"
 src={T5}
-/>
+/> */}
 
 
         </div> 
