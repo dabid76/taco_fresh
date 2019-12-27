@@ -31,57 +31,86 @@ import T5 from '../images/T5.jpg'
 
 class Photo extends Component {
 
-    // photo = (propertyName) =>{
-        // console.log('this is happening', propertyName)
+    photo = (propertyName) =>{
+        console.log('this is happening', propertyName)
         // if (propertyName === 'Tacos Photo') {
         //     this.props.history.push('/tacosPhoto')
         //     this.setState({ open: false });
-    // }
+    }
 
     state = { 
         isOpen: false 
     }
-
-    handleShowDialog = () => {
-    //   this.setState({ isOpen: !this.state.isOpen });
-      console.log('cliked');
+    
+    handleShowDialog = (event, propertyName) => {
+      console.log('clicked', event);
+      // this.setState({
+      //    isOpen: !this.state.isOpen, propertyName
+      //   });
+      if (event === 'one') {
+        this.setState({ isOpen: !this.state.isOpen });
+    } else if (event === 'two'){
+        this.setState({ isOpen: !this.state.isOpen });
     }
+  }
+
+  handleShowDialog = this.handleShowDialog.bind(this)
 
     render() {
     return (
         <div className="name">
-            {/* <h2> */}
-                {/* Photo Gallery */}
-            {/* </h2> */}
-            {/* <div onClick={() => this.photo('Tacos Photo')}>
+            {/* <h2>
+                Photo Gallery
+            </h2>
+            <div  onClick={() => this.photo('Tacos Photo')}>
                 <Tacos />
             </div>
             <div onClick={(event) => this.photo('Rolls Photo', event)}>
                 <Rolls />
             </div> */}
 <img
-className="small"
+className="image"
 src={A0}
+onClick={(event) => this.handleShowDialog('one', event)}
+alt="one"
 />
 {this.state.isOpen && (
           <dialog
             className="dialog"
             style={{ position: 'absolute' }}
             open
-            onClick={() => this.handleShowDialog()}
+            // onClick={this.handleShowDialog}
           >
             <img
               className="image"
               src={A0}
-              onClick={() => this.handleShowDialog()}
-              alt="no image"
+              onClick={(event) => this.handleShowDialog('one', event)}
+              alt="one"
             />
           </dialog>
         )}
-{/* <img
+<img
 className="image"
 src={A1}
+onClick={(event) => this.handleShowDialog('two', event)}
+alt="two"
 />
+{this.state.isOpen && (
+          <dialog
+            className="dialog"
+            style={{ position: 'absolute' }}
+            open
+            // onClick={this.handleShowDialog}
+          >
+            <img
+              className="image"
+              src={A1}
+              onClick={(event) => this.handleShowDialog('two', event)}
+              alt="two"
+            />
+          </dialog>
+        )}
+
 <img
 className="image"
 src={A2}
@@ -141,7 +170,7 @@ src={T4}
 <img
 className="image"
 src={T5}
-/> */}
+/>
 
 
         </div> 
