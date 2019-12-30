@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import {connect} from 'react-redux';
 import { Header, Icon } from 'semantic-ui-react'
 import './Photo.css'
+import Grid from "@material-ui/core/Grid";
+import Lightbox from 'react-image-lightbox';
+import 'react-image-lightbox/style.css';
 // import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 
@@ -31,159 +34,109 @@ import T5 from '../images/T5.jpg'
 
 class Photo extends Component {
 
+  componentDidMount(id) {
+    this.props.dispatch({type: 'GET_PIC'})
+  } // end componentDidMount
+
     photo = (propertyName) =>{
         console.log('this is happening', propertyName)
-        // if (propertyName === 'Tacos Photo') {
-        //     this.props.history.push('/tacosPhoto')
-        //     this.setState({ open: false });
     }
 
-    state = { 
-        isOpen: false 
+    // state = { 
+    //   photoIndex: 0,
+    //   isOpen: false 
+    // }
+
+    constructor(props) {
+      super(props);
+   
+      this.state = {
+        photoIndex: 0,
+        isOpen: false,
+      };
+    }
+
+    getPic(){
+      this.props.dispatch({type: 'GET_PIC'})
+      this.setState({
+        isOpen: !this.state.isOpen
+       });
     }
     
-    handleShowDialog = (event, propertyName) => {
-      console.log('clicked', propertyName, event.target);
-      // this.setState({
-      //    isOpen: !this.state.isOpen
-      //   });
-      if (propertyName === 'One') {
-        this.setState({ isOpen: !this.state.isOpen});
-    } else if (propertyName === 'two'){
-        this.setState({ isOpen: !this.state.isOpen });
-    }
+    handleShowDialog(id) {
+      console.log('clicked', id);
+      this.props.dispatch({type: 'GET_PIC_ID', payload: id})
+      this.setState({
+         isOpen: !this.state.isOpen
+        });
+    //   if (id === id) {
+    //     this.setState({ isOpen: !this.state.isOpen});
+    // } 
+    // else{
+    // }
   }
 
-  handleShowDialog = this.handleShowDialog.bind(this)
+  // handleShowDialog = this.handleShowDialog.bind(this)
 
     render() {
+      
+      const { photoIndex, isOpen } = this.state;
+
+      let pic = this.props.reduxStore.pictures.map((pictures, id) => {
+        return (
+                
+          <div className="name" key={id} >
+                  {/* <h1 key={id}>{pictures.title}</h1> */}
+                  <img 
+                    className="image"
+                    src={pictures.image} 
+                    alt={pictures.id} 
+                    onClick={() => this.handleShowDialog(pictures.id)}/>
+                  {/* {this.state.isOpen && (
+                    <dialog
+                      className="dialog"
+                      style={{ position: 'absolute' }}
+                      open
+                    >
+                      <img
+                        className="image"
+                        src={pictures.image} 
+                        onClick={() => this.handleShowDialog(pictures.id)}
+                        alt={pictures.id} 
+                        />
+                    </dialog>
+                  )} */}
+          </div>)
+      }) // end map
+
     return (
+      
         <div className="name">
-            {/* <h2>
-                Photo Gallery
-            </h2>
-            <div  onClick={() => this.photo('Tacos Photo')}>
-                <Tacos />
-            </div>
-            <div onClick={(event) => this.photo('Rolls Photo', event)}>
-                <Rolls />
-            </div> */}
-<img
-className="image"
-src={A0}
-onClick={(event) => this.handleShowDialog.bind(this)(event, 'One')}
-alt="one"
-/>
-{/* <img
-className="image"
-src={A1}
-onClick={(event) => this.handleShowDialog.bind(this)(event, 'two')}
-alt="two"
-/> */}
-{this.state.isOpen && (
-          <dialog
-            className="dialog"
-            style={{ position: 'absolute' }}
-            open
-            // onClick={(event) => this.handleShowDialog.bind(this)(event, 'one')}
-          >
-            <img
-              className="image"
-              src={A0}
-              onClick={(event) => this.handleShowDialog.bind(this)(event, 'One')}
-              alt="one"
-            />
-            {/* <img
-              className="image"
-              src={A1}
-              onClick={(event) => this.handleShowDialog.bind(this)(event, 'two')}
-              alt="two"
-            /> */}
-          </dialog>
-        )}
-<img
-className="image"
-src={A1}
-onClick={(event) => this.handleShowDialog.bind(this)(event, 'two')}
-alt="two"
-/>
-{this.state.isOpen && (
-          <dialog
-            className="dialog"
-            style={{ position: 'absolute' }}
-            open
-          >
-            <img
-              className="image"
-              src={A1}
-              onClick={(event) => this.handleShowDialog.bind(this)(event, 'two')}
-              alt="two"
-            />
-          </dialog>
-        )}
+        <Grid container spacing={16}>
+          {pic}
+        </Grid>
+        <button type="button" onClick={() => this.getPic({ isOpen: true })}>
+          Open Lightbox
+        </button>
 
-{/* <img
-className="image"
-src={A2}
-/>
-<img
-className="image"
-src={A3}
-/>
-<img
-className="image"
-src={A4}
-/>
-<img
-className="image"
-src={A5}
-/>
-<img
-className="image"
-src={A6}
-/>
-<img
-className="image"
-src={A7}
-/>
-<img
-className="image"
-src={A8}
-/>
-<img
-className="image"
-src={A9}
-/>
-<img
-className="image"
-src={A10}
-/>
-<img
-className="image"
-src={A11}
-/>
-<img
-className="image"
-src={T1}
-/>
-<img
-className="image"
-src={T2}
-/>
-<img
-className="image"
-src={T3}
-/>
-<img
-className="image"
-src={T4}
-/>
-<img
-className="image"
-src={T5}
-/> */}
-
-
+        {isOpen && (
+          <Lightbox
+            mainSrc={pic[photoIndex]}
+            nextSrc={pic[(photoIndex + 1) % pic.length]}
+            prevSrc={pic[(photoIndex + pic.length - 1) % pic.length]}
+            onCloseRequest={() => this.setState({ isOpen: false })}
+            onMovePrevRequest={() =>
+              this.setState({
+                photoIndex: (photoIndex + pic.length - 1) % pic.length,
+              })
+            }
+            onMoveNextRequest={() =>
+              this.setState({
+                photoIndex: (photoIndex + 1) % pic.length,
+              })
+            }
+          />
+          )}
         </div> 
         );
     }
