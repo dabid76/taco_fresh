@@ -32,6 +32,9 @@ import T3 from '../images/T3.jpg'
 import T4 from '../images/T4.jpg'
 import T5 from '../images/T5.jpg'
 
+// let allPic;
+
+
 class Photo extends Component {
 
   componentDidMount(id) {
@@ -42,21 +45,22 @@ class Photo extends Component {
         console.log('this is happening', propertyName)
     }
 
-    // state = { 
-    //   photoIndex: 0,
-    //   isOpen: false 
-    // }
-
-    constructor(props) {
-      super(props);
-   
-      this.state = {
-        photoIndex: 0,
-        isOpen: false,
-      };
+    state = { 
+      photoIndex: 0,
+      isOpen: false 
     }
 
-    getPic(){
+    // constructor(props) {
+    //   super(props);
+   
+    //   this.state = {
+    //     photoIndex: 0,
+    //     isOpen: false,
+    //   };
+    // }
+
+    getPic(payload){
+      console.log('this', this.props.reduxStore.pictures[0].image)
       this.props.dispatch({type: 'GET_PIC'})
       this.setState({
         isOpen: !this.state.isOpen
@@ -65,7 +69,7 @@ class Photo extends Component {
     
     handleShowDialog(id) {
       console.log('clicked', id);
-      this.props.dispatch({type: 'GET_PIC_ID', payload: id})
+      // this.props.dispatch({type: 'GET_PIC_ID', payload: id})
       this.setState({
          isOpen: !this.state.isOpen
         });
@@ -79,60 +83,65 @@ class Photo extends Component {
   // handleShowDialog = this.handleShowDialog.bind(this)
 
     render() {
+
+      // let filtered = this.props.reduxStore.pictures.filter(pictures => pictures.id == this.props.match.params.id)
+      const images = [
+        '../images/A0.jpg',
+      ];
+      
       
       const { photoIndex, isOpen } = this.state;
 
-      let pic = this.props.reduxStore.pictures.map((pictures, id) => {
-        return (
+      let allPic = this.props.reduxStore.pictures
+        
+      let pic = this.props.reduxStore.pictures.filter(image => image.id == this.props.match.params.id)
+    
+      //   return (
                 
-          <div className="name" key={id} >
-                  {/* <h1 key={id}>{pictures.title}</h1> */}
-                  <img 
-                    className="image"
-                    src={pictures.image} 
-                    alt={pictures.id} 
-                    onClick={() => this.handleShowDialog(pictures.id)}/>
-                  {/* {this.state.isOpen && (
-                    <dialog
-                      className="dialog"
-                      style={{ position: 'absolute' }}
-                      open
-                    >
-                      <img
-                        className="image"
-                        src={pictures.image} 
-                        onClick={() => this.handleShowDialog(pictures.id)}
-                        alt={pictures.id} 
-                        />
-                    </dialog>
-                  )} */}
-          </div>)
-      }) // end map
+      //     <div className="name" key={id} >
+      //             <img 
+      //               className="image"
+      //               src={pictures.image} 
+      //               alt={pictures.id} 
+      //               onClick={() => this.handleShowDialog(pictures.id)}/>
+      //     </div>)
+      // }) // end map
 
     return (
       
         <div className="name">
-        <Grid container spacing={16}>
+      {/* <Grid container spacing={16}>
           {pic}
-        </Grid>
+        </Grid> */}
         <button type="button" onClick={() => this.getPic({ isOpen: true })}>
           Open Lightbox
         </button>
+        
+        {
+        pic.map((pictures) =>
+        <img 
+          className="image"
+          src={pictures.image} 
+          alt={pictures.id} 
+          onClick={() => this.handleShowDialog(pictures.id)}/>        
+          )
+      }
 
         {isOpen && (
+          
           <Lightbox
-            mainSrc={pic[photoIndex]}
-            nextSrc={pic[(photoIndex + 1) % pic.length]}
-            prevSrc={pic[(photoIndex + pic.length - 1) % pic.length]}
+            mainSrc={allPic[0].image}
+            nextSrc={allPic[(photoIndex + 1) % allPic.length]}
+            prevSrc={allPic[(photoIndex + allPic.length - 1) % allPic.length]}
             onCloseRequest={() => this.setState({ isOpen: false })}
             onMovePrevRequest={() =>
               this.setState({
-                photoIndex: (photoIndex + pic.length - 1) % pic.length,
+                photoIndex: (photoIndex + allPic.length - 1) % allPic.length,
               })
             }
             onMoveNextRequest={() =>
               this.setState({
-                photoIndex: (photoIndex + 1) % pic.length,
+                photoIndex: (photoIndex + 1) % allPic.length,
               })
             }
           />
@@ -144,7 +153,8 @@ class Photo extends Component {
   
   const mapStateToProps = reduxStore => {
     return {
-        reduxStore
+        reduxStore,
+        pictures: reduxStore.picReducer,
     }; // end return
   }; // end mapStateToProps
   
