@@ -11,6 +11,7 @@ const passport = require('./strategies/user.strategy');
 // Route includes
 const userRouter = require('./routes/user.router');
 const pictureRouter = require('./routes/picture.router')
+const foodRouter = require('./routes/food.router')
 
 
 // Body parser middleware
@@ -27,6 +28,7 @@ app.use(passport.session());
 /* Routes */
 app.use('/api/user', userRouter);
 app.use('/api/picture', pictureRouter)
+app.use('/api/food', foodRouter)
 
 
 // Serve static files

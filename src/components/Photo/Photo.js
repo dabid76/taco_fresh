@@ -108,11 +108,12 @@ class Photo extends Component {
       // }) // end map
 
     return (
-      
         <div className="name">
       {/* <Grid container spacing={16}>
           {pic}
         </Grid> */}
+                              {JSON.stringify(this.props.reduxStore.dine.specialtyRoll)}
+
         <button type="button" onClick={() => this.getPic({ isOpen: true })}>
           Open Lightbox
         </button>
