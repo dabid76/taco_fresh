@@ -20,10 +20,10 @@
   font-size: 24px;
   cursor: pointer;
   outline:0;
-  font-family: 'Amatic SC', cursive;
+  font-family: 'Amatic SC', fantasy;
   /* font-family: var(--heading-family) !important; */
   font-weight: bold;
-  /* padding: 0px 10px 0px 13px; */
+  padding: 11px;
 }
 
 
@@ -34,7 +34,7 @@
 .nav-right {
   float: right;
   display: flex;
-  font-family: var(--heading-family) !important;
+  /* font-family: var(--heading-family) !important; */
   margin-right: 40%;
   padding: 0 0 4px 0;
   border-bottom-width:1px;
@@ -174,8 +174,8 @@ div.MuiIconButton-root {
 }
 
 .dropdown {
-	position: relative;
-  margin: 0 auto;
+	/* position: relative; */
+  /* margin: 0 auto; */
   color: #fc0909;
   padding: 0 0 4px 0;
   text-transform: uppercase;

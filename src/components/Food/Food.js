@@ -23,6 +23,7 @@ class Food extends Component {
                     <div className="taco-grid-container">
                     <main className="flexbox">
                     <div className="grid-item">
+                        Main Menu                    
                     </div>
                     </main>
                     </div>
