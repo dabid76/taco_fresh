@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {connect} from 'react-redux';
-import { Header, Icon } from 'semantic-ui-react'
+import { Header, Icon, Button } from 'semantic-ui-react'
 import './Private.css'
 import tacos from '../images/tacos.jpg'
 
@@ -16,6 +16,8 @@ class Private extends Component {
             <div className="info">
             <h2>
                 Information
+                <Button><Icon name='thumbs up' size='big' color='black' />Yes</Button>             
+
             </h2>
                 <p><a href="tel:651 777 3966">(651)777-3966</a></p>
                 <p>Address: 3156 Century Avenue North, Mahtomedi, Minnesota 55110</p>
